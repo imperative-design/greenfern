@@ -1,0 +1,41 @@
+//- layout.pug
+html
+  head
+    title GreenFern Tree Service | Spruce up your yard!
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    
+    block scripts
+
+    block styles
+        link(rel="stylesheet", href="/styles/css/styles.css")
+        //- <link rel="stylesheet" href="" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="">
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css", integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU", crossorigin="anonymous")
+
+    body.page(class=active_page)
+        div.container
+            header.group
+                .wrapper
+                    a(href="//imperativedesign.net").logo
+                        .icon
+                            i.fab.fa-pagelines
+                        h1
+                            | Greenfern
+                            span.tagline tree service
+                    a.nav-toggle(href="#")
+                        i.fa.fa-bars
+                    .nav-wrapper
+                        .nav-ctas
+                            a.phone 
+                                i.fas.fa-phone
+                                | (770) 881-1712
+                            a.quote request a quote
+                        include nav.pug      
+            block content
+
+            block bodyscripts
+                script(src='./scripts/rxjs/bundles/Rx.js')
+                script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+                script(src='/js/global.js')
+
+    block footer
+        footer#footer
