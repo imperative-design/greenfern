@@ -59,6 +59,19 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Permanent Marker', cursive;
 */
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$top+0,1e5799+100 */
+  background: #fff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fff 0%, #eee 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fff 0%, #eee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+  /* IE6-9 */ }
+
 .group:after {
   content: "";
   display: table;
@@ -196,10 +209,29 @@ strong {
   /* Firefox 18- */
   color: #fff; }
 
+.gradient-dark-radial {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$inner+0,1e5799+100 */
+  background: transparent;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, transparent 0%, #000 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, #000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, transparent 0%, #000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$inner', endColorstr='$outer',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
 header {
   position: fixed;
   background: white;
-  padding: 30px 3% 10px;
+  padding: 30px 0 10px;
   margin: 0px;
   z-index: 11;
   width: 100%;
@@ -259,82 +291,84 @@ header {
       align-items: center; }
       header .logo .icon i {
         font-size: 44pt; }
-  header .nav-wrapper .nav-ctas {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end; }
-    header .nav-wrapper .nav-ctas .phone {
-      font-weight: bold;
-      margin: 0 10px 0 0; }
-      header .nav-wrapper .nav-ctas .phone i {
-        margin: 0 5px 0 0; }
-    header .nav-wrapper .nav-ctas .quote {
-      text-transform: capitalize;
-      background: #058601;
-      padding: 4px 7px;
-      border-radius: 4px;
-      color: #fff;
-      font-weight: bold; }
-  header .nav-wrapper .nav {
-    display: flex;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    z-index: 50;
-    justify-content: space-between;
-    min-width: 285px;
-    margin: 4px 0 0 0; }
-    header .nav-wrapper .nav li {
-      position: relative;
-      margin: 0 15px 0 0; }
-      header .nav-wrapper .nav li:last-child {
-        margin-right: 0; }
-      header .nav-wrapper .nav li a {
-        text-decoration: none;
-        color: #035301;
-        text-transform: uppercase;
-        font-size: 14pt;
+  header .nav-wrapper {
+    margin-top: 20px; }
+    header .nav-wrapper .nav-ctas {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end; }
+      header .nav-wrapper .nav-ctas .phone {
         font-weight: bold;
-        border-bottom: 1px solid transparent;
-        display: block; }
-        header .nav-wrapper .nav li a:last-child {
-          margin-right: 0; }
-        header .nav-wrapper .nav li a:hover {
-          color: #000;
-          border-color: #058601; }
-      header .nav-wrapper .nav li.dropdown ul {
-        position: absolute;
-        width: 325px;
-        left: -110px;
-        display: none; }
-        header .nav-wrapper .nav li.dropdown ul li:first-child {
-          padding-top: 10px; }
-        header .nav-wrapper .nav li.dropdown ul li:last-child a {
-          padding-bottom: 15px; }
-        header .nav-wrapper .nav li.dropdown ul li a {
-          font-size: 14pt;
-          background: rgba(255, 255, 255, 0.95);
-          display: block;
-          text-align: center;
-          padding: 7px;
-          box-sizing: border-box; }
-          header .nav-wrapper .nav li.dropdown ul li a:hover {
-            border-color: transparent;
-            transform: none;
-            background: #058601;
-            color: #fff;
-            font-weight: 400; }
-      header .nav-wrapper .nav li.dropdown:hover ul {
-        display: block; }
-      header .nav-wrapper .nav li.get_in_touch a {
-        font-size: 12pt;
-        display: inline-block;
-        background: #0036bf;
+        margin: 0 10px 0 0; }
+        header .nav-wrapper .nav-ctas .phone i {
+          margin: 0 5px 0 0; }
+      header .nav-wrapper .nav-ctas .quote {
+        text-transform: capitalize;
+        background: #058601;
+        padding: 4px 7px;
+        border-radius: 4px;
         color: #fff;
-        padding: 0 20px;
-        margin: 0; }
-        header .nav-wrapper .nav li.get_in_touch a:hover {
-          transform: none;
-          border: none; }
+        font-weight: bold; }
+    header .nav-wrapper .nav {
+      display: flex;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      z-index: 50;
+      justify-content: space-between;
+      min-width: 285px;
+      margin: 4px 0 0 0; }
+      header .nav-wrapper .nav li {
+        position: relative;
+        margin: 0 15px 0 0; }
+        header .nav-wrapper .nav li:last-child {
+          margin-right: 0; }
+        header .nav-wrapper .nav li a {
+          text-decoration: none;
+          color: #035301;
+          text-transform: uppercase;
+          font-size: 14pt;
+          font-weight: bold;
+          border-bottom: 1px solid transparent;
+          display: block; }
+          header .nav-wrapper .nav li a:last-child {
+            margin-right: 0; }
+          header .nav-wrapper .nav li a:hover {
+            color: #000;
+            border-color: #058601; }
+        header .nav-wrapper .nav li.dropdown ul {
+          position: absolute;
+          width: 325px;
+          left: -110px;
+          display: none; }
+          header .nav-wrapper .nav li.dropdown ul li:first-child {
+            padding-top: 10px; }
+          header .nav-wrapper .nav li.dropdown ul li:last-child a {
+            padding-bottom: 15px; }
+          header .nav-wrapper .nav li.dropdown ul li a {
+            font-size: 14pt;
+            background: rgba(255, 255, 255, 0.95);
+            display: block;
+            text-align: center;
+            padding: 7px;
+            box-sizing: border-box; }
+            header .nav-wrapper .nav li.dropdown ul li a:hover {
+              border-color: transparent;
+              transform: none;
+              background: #058601;
+              color: #fff;
+              font-weight: 400; }
+        header .nav-wrapper .nav li.dropdown:hover ul {
+          display: block; }
+        header .nav-wrapper .nav li.get_in_touch a {
+          font-size: 12pt;
+          display: inline-block;
+          background: #0036bf;
+          color: #fff;
+          padding: 0 20px;
+          margin: 0; }
+          header .nav-wrapper .nav li.get_in_touch a:hover {
+            transform: none;
+            border: none; }
 
 .services-page .nav li.services > a,
 .about-page .nav li.about > a,
@@ -343,208 +377,88 @@ header {
   border-color: #058601; }
 
 .band {
-  overflow: hidden; }
-  .band .wrapper {
-    width: 100%;
-    margin: 20px auto;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between; }
-    .band .wrapper .message {
-      position: relative;
-      width: 60%;
-      font-size: 18pt;
-      margin-right: 10%; }
-      .band .wrapper .message p {
-        font-weight: 100; }
-      .band .wrapper .message h2, .band .wrapper .message h2 p {
-        font-family: 'Permanent Marker', cursive;
-        font-size: 29pt; }
-      .band .wrapper .message h2 {
-        color: #058601;
-        margin: 0 0 20px 0;
-        font-size: 27pt; }
-      .band .wrapper .message h2 span {
-        color: #333;
-        font-weight: 100;
-        font-size: 24pt; }
-  .band.blue {
-    color: #fff;
-    background: #058601; }
-    .band.blue .message h2 {
-      color: #fff; }
-  .band.white .message h2 p {
-    background: #058601;
-    color: #fff; }
-  .band.band1 .wrapper {
-    margin: 10px auto 0;
-    padding: 0 20px;
-    box-sizing: border-box;
-    flex-direction: column; }
-    .band.band1 .wrapper h2 {
-      font-family: 'Permanent Marker', cursive;
-      font-size: 22pt;
-      margin: 7px 0 12px; }
-  .band.band1 .message p {
-    font-weight: 100; }
-  .band.band1 .message h2 p {
-    margin-top: 2px;
-    padding: 5px 0 5px 0px;
-    text-align: center; }
-  .band.band2 .wrapper > .read-more {
-    max-width: 40%;
-    max-height: 250px;
-    margin: 0 5% 0 0; }
-    .band.band2 .wrapper > .read-more img {
-      width: 100%;
-      margin: none;
-      max-width: none;
-      max-height: none; }
-  .band.band3 {
-    display: flex;
-    margin: 0 0 50px;
-    width: 100%; }
-    .band.band3 .wrapper {
-      width: 100%;
-      justify-content: space-around; }
-    .band.band3 .message {
-      margin-right: 0;
-      width: 100%;
+  display: flex; }
+  .band .left {
+    width: 19%;
+    margin-right: 1%; }
+    .band .left a {
       display: flex;
-      align-content: space-around;
-      justify-content: space-around; }
-      .band.band3 .message h4 {
-        font-family: 'Permanent Marker', cursive;
-        font-size: 33pt;
-        margin: 0 0 15px 0; }
-      .band.band3 .message p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        border-bottom: 1px dotted;
-        padding-bottom: 4px; }
-  .band .read-more.btn {
-    background: #4A4A4A;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    position: absolute;
-    font-size: 10pt;
-    bottom: 15px;
-    right: 15px;
-    line-height: 1;
-    font-family: 'Open Sans', sans-serif; }
-  .band .quick-contact {
-    width: 40%; }
-    .band .quick-contact form .close {
-      font-size: 14pt;
-      color: red;
-      position: absolute;
-      right: 20px;
-      top: 5px;
-      z-index: 115; }
-      .band .quick-contact form .close:hover {
-        cursor: pointer; }
-    .band .quick-contact form input, .band .quick-contact form textarea {
-      background: #076a04;
-      width: 100%;
-      margin: 0 0 7px;
-      font-size: 12pt;
-      padding: 10px;
+      flex-direction: column;
+      margin: 0 0 10px; }
+      .band .left a img {
+        width: 100%; }
+      .band .left a#next-door {
+        display: flex;
+        flex-direction: row;
+        background: #058601;
+        color: #fff;
+        align-items: center;
+        padding: 10px 5px;
+        font-size: 20pt;
+        font-weight: bold; }
+        .band .left a#next-door img {
+          max-width: 25px;
+          max-height: 25px;
+          margin: 0 10px 0 0; }
+  .band .right {
+    width: 80%; }
+    .band .right > h2 {
+      background: #035301;
+      font-size: 24;
       color: #fff;
-      border: none; }
-      .band .quick-contact form input:focus, .band .quick-contact form textarea:focus {
-        outline: 2px solid #058601; }
-      .band .quick-contact form input[type='submit'], .band .quick-contact form textarea[type='submit'] {
+      margin: 0px 0 10px;
+      padding: 10px 20px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$left+0,1e5799+100 */
+      background: #058601;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #058601 0%, #035301 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #058601 0%, #035301 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #058601 0%, #035301 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left', endColorstr='$right',GradientType=1 );
+      /* IE6-9 */ }
+    .band .right .testimonials {
+      display: flex; }
+      .band .right .testimonials .testimonial {
+        border: 2px solid #035301;
+        border-radius: 4px;
         background: #fff;
-        color: #058601;
-        border: none;
-        padding: 7px 0; }
-        .band .quick-contact form input[type='submit']:hover, .band .quick-contact form textarea[type='submit']:hover {
-          cursor: pointer; }
-    .band .quick-contact .success-msg {
-      display: none; }
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 32%;
+        margin: 0 10px 0 0; }
+        .band .right .testimonials .testimonial:last-child {
+          margin-right: 0; }
+        .band .right .testimonials .testimonial .img {
+          display: flex; }
+          .band .right .testimonials .testimonial .img img {
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            border: 2px solid #035301;
+            padding: 5px; }
+        .band .right .testimonials .testimonial .quote p {
+          margin: 20px 0;
+          text-align: center;
+          line-height: 1.4; }
+        .band .right .testimonials .testimonial .quote .from {
+          font-style: italic;
+          color: #035301;
+          font-size: 14pt;
+          text-align: right;
+          margin: 10px 5% 10px 0; }
 
 .home .ctas {
-  margin: 110px 0 0 0;
+  margin: 110px 0 15px 0;
   max-height: 500px; }
   .home .ctas .ad1 img {
     position: relative;
     width: 100%;
-    z-index: 1;
-    filter: grayscale(1);
-    transition: all 500ms ease-in-out; }
-  .home .ctas .ad1.active img {
-    filter: grayscale(0); }
-
-.wip {
-  width: 100%;
-  background: #93f0ff;
-  box-sizing: border-box;
-  padding: 25px;
-  margin: 5px auto;
-  text-align: center;
-  color: #375e64;
-  font-size: 20pt; }
-
-.client-cases {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: 0 0 25px; }
-  .client-cases li {
-    display: flex;
-    width: 32%;
-    margin-right: 1%;
-    transition: all 500ms; }
-    .client-cases li:last-child {
-      margin-right: 0; }
-    .client-cases li .desc {
-      font-weight: bold;
-      font-size: 16pt; }
-      .client-cases li .desc p {
-        font-weight: 100;
-        font-size: 14pt; }
-    .client-cases li .client-img {
-      position: relative;
-      width: 95%;
-      margin: 0 15px 0 0;
-      max-width: 275px; }
-      .client-cases li .client-img img {
-        background: #333;
-        border: 1px solid #111;
-        outline: none;
-        width: 100%;
-        filter: grayscale(1);
-        z-index: 1;
-        position: relative; }
-      .client-cases li .client-img:hover {
-        cursor: pointer; }
-        .client-cases li .client-img:hover img {
-          filter: none; }
-        .client-cases li .client-img:hover .vignette {
-          opacity: 0.1; }
-    .client-cases li .vignette {
-      position: absolute;
-      z-index: 10;
-      left: 0;
-      top: 0;
-      width: 101%;
-      height: 100%;
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+68&0+0,1+67 */
-      background: radial-gradient(ellipse at center, transparent 0%, black 85%);
-      transition: opacity 0.5s ease-out; }
-
-.band .wrapper .next-steps li.btn {
-  margin: 0 0 15px; }
-  .band .wrapper .next-steps li.btn h2, .band .wrapper .next-steps li.btn a {
-    font-family: 'Permanent Marker', cursive;
-    background: #fff;
-    color: #058601; }
-  .band .wrapper .next-steps li.btn a {
-    display: block;
-    font-size: 22pt;
-    text-align: center;
-    padding: 15px 20px; }
+    z-index: 1; }
 
 .services-page.website-development .web-dev a,
 .services-page.appdev .appdev a,

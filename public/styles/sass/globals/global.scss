@@ -1,4 +1,11 @@
 
+@import 'colors';
+@import 'mixins';
+
+body {
+    @include l_gradient(#fff, #eee);
+}
+
 //clearfix
 .group:after {
   content: "";
@@ -142,4 +149,14 @@ strong { font-weight: 500; }
 }
 :-moz-placeholder { /* Firefox 18- */
     color: #fff;
+}
+
+.gradient-dark-radial {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    @include r_gradient(transparent, #000);
 }
