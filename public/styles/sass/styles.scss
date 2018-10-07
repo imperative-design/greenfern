@@ -13,8 +13,11 @@
 @import 'pages/clients';
 
 //Effects
-a { transition: all 250ms; font-size: 11pt; text-decoration: none; }
-a:hover { transform: scale(1.1); color: #fff; }
+a { 
+    transition: all 250ms; font-size: 11pt; text-decoration: none; 
+    &:hover { cursor: pointer; }
+}
+a.scaleable:hover { transform: scale(1.1); color: #fff; }
 
 @import 'media-queries/phones'; 
 

@@ -96,9 +96,6 @@ function bindCtaAnimations(sel){
         
         //Raw numbers
         let header_height     = $('header').height();
-        console.log(IdAnimations);
-        console.log(IdAnimations.count);
-        debugger;
         let activation_point  = $current_cta.offset().top;
         let middle_threshold  = 150;
         

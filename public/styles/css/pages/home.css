@@ -1,83 +1,90 @@
-.band {
-  display: flex; }
-  .band .left {
-    width: 19%;
-    margin-right: 1%; }
-    .band .left a {
-      display: flex;
-      flex-direction: column;
-      margin: 0 0 10px; }
-      .band .left a img {
-        width: 100%; }
-      .band .left a#next-door {
-        display: flex;
-        flex-direction: row;
-        background: #058601;
-        color: #fff;
-        align-items: center;
-        padding: 10px 5px;
-        font-size: 20pt;
-        font-weight: bold; }
-        .band .left a#next-door img {
-          max-width: 25px;
-          max-height: 25px;
-          margin: 0 10px 0 0; }
-  .band .right {
-    width: 80%; }
-    .band .right > h2 {
-      background: #035301;
-      font-size: 24;
-      color: #fff;
-      margin: 0px 0 10px;
-      padding: 10px 20px;
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$left+0,1e5799+100 */
-      background: #058601;
-      /* Old browsers */
-      background: -moz-linear-gradient(left, #058601 0%, #035301 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, #058601 0%, #035301 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, #058601 0%, #035301 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left', endColorstr='$right',GradientType=1 );
-      /* IE6-9 */ }
-    .band .right .testimonials {
-      display: flex; }
-      .band .right .testimonials .testimonial {
-        border: 2px solid #035301;
-        border-radius: 4px;
-        background: #fff;
-        padding: 7px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 32%;
-        margin: 0 10px 0 0; }
-        .band .right .testimonials .testimonial:last-child {
-          margin-right: 0; }
-        .band .right .testimonials .testimonial .img {
-          display: flex; }
-          .band .right .testimonials .testimonial .img img {
-            height: 75px;
-            width: 75px;
-            border-radius: 50%;
-            border: 2px solid #035301;
-            padding: 5px; }
-        .band .right .testimonials .testimonial .quote p {
-          margin: 20px 0;
-          text-align: center;
-          line-height: 1.4; }
-        .band .right .testimonials .testimonial .quote .from {
-          font-style: italic;
-          color: #035301;
-          font-size: 14pt;
-          text-align: right;
-          margin: 10px 5% 10px 0; }
-
 .home .ctas {
-  margin: 110px 0 15px 0;
+  margin: 115px 0 15px 0;
   max-height: 500px; }
   .home .ctas .ad1 img {
     position: relative;
     width: 100%;
     z-index: 1; }
+
+.home .band.green {
+  min-height: 200px;
+  display: block;
+  padding: 20px 25px; }
+  .home .band.green > h4, .home .band.green .wrapper .right, .home .band.green .wrapper .left {
+    text-transform: capitalize; }
+  .home .band.green .wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .home .band.green .wrapper section {
+      position: relative;
+      display: flex;
+      z-index: 15;
+      text-transform: capitalize; }
+    .home .band.green .wrapper section:nth-child(1), .home .band.green .wrapper section:last-child {
+      flex-direction: column; }
+    .home .band.green .wrapper section:nth-child(1) {
+      width: 29%;
+      margin-right: 1%;
+      background: #035301;
+      padding: 15px 10px;
+      border: 1px solid #012100; }
+      .home .band.green .wrapper section:nth-child(1) a {
+        color: #eaffc5;
+        padding: 0 0 5px;
+        margin: 5px 0;
+        border-bottom: 1px dotted #eaffc5; }
+        .home .band.green .wrapper section:nth-child(1) a:last-child {
+          border: none; }
+      .home .band.green .wrapper section:nth-child(1) > h4 {
+        position: relative;
+        color: #fff;
+        font-weight: bold;
+        font-size: 34pt;
+        z-index: 15;
+        margin: 0 0 15px; }
+    .home .band.green .wrapper section:nth-child(2) {
+      position: relative;
+      z-index: 15;
+      width: 40%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column; }
+    .home .band.green .wrapper section:last-child {
+      margin: 0;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px 10px;
+      color: #035301; }
+      .home .band.green .wrapper section:last-child h4 {
+        text-align: center;
+        font-size: 12pt;
+        margin-bottom: 2px; }
+      .home .band.green .wrapper section:last-child .rounded-btn {
+        margin-top: 0;
+        font-size: 17pt;
+        padding: 10px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$inner+0,1e5799+100 */
+        background: #046d01;
+        /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #046d01 0%, #035301 100%);
+        /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, #046d01 0%, #035301 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, #046d01 0%, #035301 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$inner', endColorstr='$outer',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */ }
+      .home .band.green .wrapper section:last-child .social {
+        display: flex;
+        align-items: center; }
+        .home .band.green .wrapper section:last-child .social a {
+          font-size: 22pt;
+          box-sizing: border-box;
+          margin: 0 4px 0 0;
+          padding: 4px;
+          border-radius: 4px; }
+          .home .band.green .wrapper section:last-child .social a:nth-child(1) {
+            background: #035301;
+            color: #fff; }
+          .home .band.green .wrapper section:last-child .social a:nth-child(2), .home .band.green .wrapper section:last-child .social a:nth-child(3) {
+            background: #035301;
+            color: #fff; }
