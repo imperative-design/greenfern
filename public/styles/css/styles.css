@@ -62,6 +62,9 @@ font-family: 'Permanent Marker', cursive;
 * {
   box-sizing: border-box; }
 
+html {
+  background: #eee; }
+
 body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$top+0,1e5799+100 */
   background: #fff;
@@ -381,7 +384,7 @@ strong {
   border: 1px dotted #035301;
   margin: 5px 0; }
 
-body > .container > header, body.blog > #container #wrap header {
+body > .container > header, body.blog > #container > header {
   position: fixed;
   background: white;
   padding: 30px 0 10px;
@@ -391,21 +394,21 @@ body > .container > header, body.blog > #container #wrap header {
   max-width: 1500px;
   box-sizing: border-box;
   opacity: .9; }
-  body > .container > header .nav-toggle, body.blog > #container #wrap header .nav-toggle {
+  body > .container > header .nav-toggle, body.blog > #container > header .nav-toggle {
     visibility: hidden; }
-  body > .container > header .wrapper, body.blog > #container #wrap header .wrapper {
+  body > .container > header .wrapper, body.blog > #container > header .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     justify-content: space-between;
     width: 100%; }
-  body > .container > header .logo, body.blog > #container #wrap header .logo {
+  body > .container > header .logo, body.blog > #container > header .logo {
     text-decoration: none;
     color: #000;
     display: flex; }
-    body > .container > header .logo:hover, body.blog > #container #wrap header .logo:hover {
+    body > .container > header .logo:hover, body.blog > #container > header .logo:hover {
       color: #000; }
-    body > .container > header .logo h1, body.blog > #container #wrap header .logo h1 {
+    body > .container > header .logo h1, body.blog > #container > header .logo h1 {
       font-family: 'Fjalla One', sans-serif;
       font-size: 42pt;
       color: #058601;
@@ -414,7 +417,7 @@ body > .container > header, body.blog > #container #wrap header {
       font-weight: bold;
       letter-spacing: -2px;
       line-height: 0.9; }
-      body > .container > header .logo h1 span.tagline, body.blog > #container #wrap header .logo h1 span.tagline {
+      body > .container > header .logo h1 span.tagline, body.blog > #container > header .logo h1 span.tagline {
         display: block;
         font-size: 22pt;
         line-height: 0.9;
@@ -423,7 +426,7 @@ body > .container > header, body.blog > #container #wrap header {
         font-weight: bold;
         letter-spacing: 0;
         text-align: center; }
-    body > .container > header .logo .icon, body.blog > #container #wrap header .logo .icon {
+    body > .container > header .logo .icon, body.blog > #container > header .logo .icon {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$top+0,1e5799+100 */
       background: #058601;
       /* Old browsers */
@@ -442,27 +445,27 @@ body > .container > header, body.blog > #container #wrap header {
       display: flex;
       justify-content: center;
       align-items: center; }
-      body > .container > header .logo .icon i, body.blog > #container #wrap header .logo .icon i {
+      body > .container > header .logo .icon i, body.blog > #container > header .logo .icon i {
         font-size: 44pt; }
-  body > .container > header .nav-wrapper, body.blog > #container #wrap header .nav-wrapper {
+  body > .container > header .nav-wrapper, body.blog > #container > header .nav-wrapper {
     margin-top: 20px; }
-    body > .container > header .nav-wrapper .nav-ctas, body.blog > #container #wrap header .nav-wrapper .nav-ctas {
+    body > .container > header .nav-wrapper .nav-ctas, body.blog > #container > header .nav-wrapper .nav-ctas {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end; }
-      body > .container > header .nav-wrapper .nav-ctas .phone, body.blog > #container #wrap header .nav-wrapper .nav-ctas .phone {
+      body > .container > header .nav-wrapper .nav-ctas .phone, body.blog > #container > header .nav-wrapper .nav-ctas .phone {
         font-weight: bold;
         margin: 0 10px 0 0; }
-        body > .container > header .nav-wrapper .nav-ctas .phone i, body.blog > #container #wrap header .nav-wrapper .nav-ctas .phone i {
+        body > .container > header .nav-wrapper .nav-ctas .phone i, body.blog > #container > header .nav-wrapper .nav-ctas .phone i {
           margin: 0 5px 0 0; }
-      body > .container > header .nav-wrapper .nav-ctas .quote, body.blog > #container #wrap header .nav-wrapper .nav-ctas .quote {
+      body > .container > header .nav-wrapper .nav-ctas .quote, body.blog > #container > header .nav-wrapper .nav-ctas .quote {
         text-transform: capitalize;
         background: #058601;
         padding: 4px 7px;
         border-radius: 4px;
         color: #fff;
         font-weight: bold; }
-    body > .container > header .nav-wrapper .nav, body.blog > #container #wrap header .nav-wrapper .nav {
+    body > .container > header .nav-wrapper .nav, body.blog > #container > header .nav-wrapper .nav {
       display: flex;
       font-family: 'Roboto', sans-serif;
       font-weight: 100;
@@ -470,12 +473,12 @@ body > .container > header, body.blog > #container #wrap header {
       justify-content: space-between;
       min-width: 285px;
       margin: 4px 0 0 0; }
-      body > .container > header .nav-wrapper .nav li, body.blog > #container #wrap header .nav-wrapper .nav li {
+      body > .container > header .nav-wrapper .nav li, body.blog > #container > header .nav-wrapper .nav li {
         position: relative;
         margin: 0 15px 0 0; }
-        body > .container > header .nav-wrapper .nav li:last-child, body.blog > #container #wrap header .nav-wrapper .nav li:last-child {
+        body > .container > header .nav-wrapper .nav li:last-child, body.blog > #container > header .nav-wrapper .nav li:last-child {
           margin-right: 0; }
-        body > .container > header .nav-wrapper .nav li a, body.blog > #container #wrap header .nav-wrapper .nav li a {
+        body > .container > header .nav-wrapper .nav li a, body.blog > #container > header .nav-wrapper .nav li a {
           text-decoration: none;
           color: #035301;
           text-transform: uppercase;
@@ -483,43 +486,43 @@ body > .container > header, body.blog > #container #wrap header {
           font-weight: bold;
           border-bottom: 1px solid transparent;
           display: block; }
-          body > .container > header .nav-wrapper .nav li a:last-child, body.blog > #container #wrap header .nav-wrapper .nav li a:last-child {
+          body > .container > header .nav-wrapper .nav li a:last-child, body.blog > #container > header .nav-wrapper .nav li a:last-child {
             margin-right: 0; }
-          body > .container > header .nav-wrapper .nav li a:hover, body.blog > #container #wrap header .nav-wrapper .nav li a:hover {
+          body > .container > header .nav-wrapper .nav li a:hover, body.blog > #container > header .nav-wrapper .nav li a:hover {
             color: #000;
             border-color: #058601; }
-        body > .container > header .nav-wrapper .nav li.dropdown ul, body.blog > #container #wrap header .nav-wrapper .nav li.dropdown ul {
+        body > .container > header .nav-wrapper .nav li.dropdown ul, body.blog > #container > header .nav-wrapper .nav li.dropdown ul {
           position: absolute;
           width: 325px;
           left: -110px;
           display: none; }
-          body > .container > header .nav-wrapper .nav li.dropdown ul li:first-child, body.blog > #container #wrap header .nav-wrapper .nav li.dropdown ul li:first-child {
+          body > .container > header .nav-wrapper .nav li.dropdown ul li:first-child, body.blog > #container > header .nav-wrapper .nav li.dropdown ul li:first-child {
             padding-top: 10px; }
-          body > .container > header .nav-wrapper .nav li.dropdown ul li:last-child a, body.blog > #container #wrap header .nav-wrapper .nav li.dropdown ul li:last-child a {
+          body > .container > header .nav-wrapper .nav li.dropdown ul li:last-child a, body.blog > #container > header .nav-wrapper .nav li.dropdown ul li:last-child a {
             padding-bottom: 15px; }
-          body > .container > header .nav-wrapper .nav li.dropdown ul li a, body.blog > #container #wrap header .nav-wrapper .nav li.dropdown ul li a {
+          body > .container > header .nav-wrapper .nav li.dropdown ul li a, body.blog > #container > header .nav-wrapper .nav li.dropdown ul li a {
             font-size: 14pt;
             background: rgba(255, 255, 255, 0.95);
             display: block;
             text-align: center;
             padding: 7px;
             box-sizing: border-box; }
-            body > .container > header .nav-wrapper .nav li.dropdown ul li a:hover, body.blog > #container #wrap header .nav-wrapper .nav li.dropdown ul li a:hover {
+            body > .container > header .nav-wrapper .nav li.dropdown ul li a:hover, body.blog > #container > header .nav-wrapper .nav li.dropdown ul li a:hover {
               border-color: transparent;
               transform: none;
               background: #058601;
               color: #fff;
               font-weight: 400; }
-        body > .container > header .nav-wrapper .nav li.dropdown:hover ul, body.blog > #container #wrap header .nav-wrapper .nav li.dropdown:hover ul {
+        body > .container > header .nav-wrapper .nav li.dropdown:hover ul, body.blog > #container > header .nav-wrapper .nav li.dropdown:hover ul {
           display: block; }
-        body > .container > header .nav-wrapper .nav li.get_in_touch a, body.blog > #container #wrap header .nav-wrapper .nav li.get_in_touch a {
+        body > .container > header .nav-wrapper .nav li.get_in_touch a, body.blog > #container > header .nav-wrapper .nav li.get_in_touch a {
           font-size: 12pt;
           display: inline-block;
           background: #0036bf;
           color: #fff;
           padding: 0 20px;
           margin: 0; }
-          body > .container > header .nav-wrapper .nav li.get_in_touch a:hover, body.blog > #container #wrap header .nav-wrapper .nav li.get_in_touch a:hover {
+          body > .container > header .nav-wrapper .nav li.get_in_touch a:hover, body.blog > #container > header .nav-wrapper .nav li.get_in_touch a:hover {
             transform: none;
             border: none; }
 
@@ -669,8 +672,13 @@ body > .container > header, body.blog > #container #wrap header {
 .clients-page .ctas {
   height: 300px; }
 
-body.blog #container #wrap header {
-  position: initial; }
+body.blog > #container > header {
+  max-width: none; }
+  body.blog > #container > header .wrapper {
+    max-width: 1500px; }
+
+body #wrap {
+  margin-top: 115px; }
 
 a {
   transition: all 250ms;

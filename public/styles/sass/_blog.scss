@@ -1,6 +1,14 @@
 
-body.blog #container #wrap header {
-    position: initial;
+body.blog > #container > header {
+    // position: relative;
+    max-width: none;
+    .wrapper {
+        max-width: 1500px;
+    }
+}
+
+body #wrap {
+    margin-top: 115px;
 }
 
 .article-title {}

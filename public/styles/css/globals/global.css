@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+html {
+  background: #eee; }
+
 body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$top+0,1e5799+100 */
   background: #fff;
