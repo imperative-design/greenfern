@@ -4,7 +4,7 @@ function bindEvents(){
     $('.show-contact').on('click', toggleQuickContact);
     //$('.quick-contact .close').on('click', retractQuickContact);
 
-    if(typeof Rx !== 'undefined') bindCtaAnimations('.cta, .graphic.image');
+    //if(typeof Rx !== 'undefined') bindCtaAnimations('.cta, .graphic.image');
 
     let form = document.querySelector('.quick-contact form');
     // Rx.Observable.fromEvent(form, 'submit').subscribe(evt => {

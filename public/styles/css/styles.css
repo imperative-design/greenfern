@@ -680,6 +680,9 @@ body.blog > #container > header {
 body #wrap {
   margin-top: 115px; }
 
+.blog .outer {
+  margin-bottom: 100px; }
+
 a {
   transition: all 250ms;
   font-size: 11pt;
