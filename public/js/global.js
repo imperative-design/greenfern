@@ -59,22 +59,27 @@ function toggleNav(evt){
     var $nav = $('.nav');
 
     if(isHidden($nav)) { 
+        console.log('showing nav');
         showNav($nav)
     } else {
+        console.log('hidding nav');
         hideNav($nav);
     }
+    return false;
 }
 
 function isHidden($nav){
-    return ($nav.css('visibility') == 'hidden')
+    return (! $nav.is(':visible'));
 }
 
 function showNav($nav){
-    $nav.css('visibility', 'visible');
+    // $nav.css('visibility', 'visible');
+    $nav.show();
 }
 
 function hideNav($nav){
-    $nav.css('visibility', 'hidden');
+    //$nav.css('visibility', 'hidden');
+    $nav.hide();
 }
 
 function bindCtaAnimations(sel){
