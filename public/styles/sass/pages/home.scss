@@ -2,6 +2,8 @@
 @import './../globals/colors';
 @import './../globals/mixins';
 
+
+
 .home .ctas { 
     margin: 115px 0 15px 0;
     max-height: 500px;
@@ -82,23 +84,7 @@
                 @include r_gradient(darken($primary, 5%), $dark-primary);
             }
             .social {
-                display: flex;
-                align-items: center;
-                a {
-                    font-size: 22pt;
-                    box-sizing: border-box;
-                    margin: 0 4px 0 0;
-                    padding: 4px;
-                    border-radius: 4px;
-                    &:nth-child(1) {
-                        background: $dark-primary;
-                        color: #fff;
-                    }
-                    &:nth-child(2), &:nth-child(3) {
-                        background: $dark-primary;
-                        color: #fff;
-                    }
-                }
+                @include social_layout
             }
         }
     }

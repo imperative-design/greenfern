@@ -1,0 +1,22 @@
+extends interior_layout.pug
+
+block main-cta
+  img(src="./img/923623146-2048x2048.jpg")
+
+block page_content
+        .wrapper
+            .left
+                h1 Get in touch  
+                    span Ask a question | Leave a testimonial
+                form(action="")
+                    input(type="text", placeholder="Name")
+                    input(type="text", placeholder="email", required)
+                    input(type="phone", placeholder="Phone", required)
+                    textarea(placeholder="Message")
+            .right
+                .right-header
+                    h2 Get connected 
+                        span | Stay in touch
+                    include social
+                .map
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424514.69118477916!2d-84.44732148592162!3d33.7726713490791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50a039ea43853%3A0xe0f3b49f32bcce46!2sRoswell%2C+GA!5e0!3m2!1sen!2sus!4v1541283528986", width="800", height="280", frameborder="0," style="border: 1px solid #035301" allowfullscreen)

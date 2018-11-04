@@ -1,4 +1,4 @@
-//- layout.pug
+//- service_layout.pug
 html
   head
     title GreenFern Tree Service | Spruce up your yard!
@@ -28,23 +28,15 @@ html
                             i.fas.fa-phone
                             | (770) 881-1712
                         a.quote request a quote
-                    include nav.pug 
-        div.container     
-            block content
-
+                    include nav.pug
+            
+        section.ctas
+            .cta
+                block main-cta
+        .page.wrapper 
+            section.content
+                block page_content
+            
             block bodyscripts
-                script(src='./scripts/rxjs/bundles/Rx.js')
                 script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
                 script(src='/js/global.js')
-
-    block footer
-        footer#footer
-            a.copyright &copy; Greenfern Tree Service
-            .sitemap
-                a(href="./") Home
-                a Pricing
-                a Services
-                a About
-                a Insurance Info
-                a(href="/news") Tree Care
-            a.phone(href="tel:(770) 881-1712") (770) 881-1712

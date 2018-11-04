@@ -1,0 +1,79 @@
+.clients-page .page.wrapper {
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+.clients-page .ctas {
+  height: 300px; }
+
+.about-page .ctas, .pricing-page .ctas, .services-page .ctas, .insurance-page .ctas, .contact-page .ctas {
+  min-height: 200px;
+  max-height: 300px; }
+
+.about-page .content, .pricing-page .content, .services-page .content, .insurance-page .content, .contact-page .content {
+  width: 98%;
+  max-width: 1500px;
+  padding: 0;
+  margin: 0 1%; }
+
+.contact-page .content .wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.contact-page .left, .contact-page .right {
+  width: 49%;
+  display: flex;
+  flex-direction: column; }
+
+.contact-page .left form {
+  display: block;
+  width: 100%; }
+  .contact-page .left form textarea {
+    min-height: 125px; }
+  .contact-page .left form input, .contact-page .left form textarea {
+    padding: 10px 5px;
+    margin: 0 0 15px;
+    border: none;
+    border-bottom: 1px dotted #035301;
+    display: block;
+    width: 98%;
+    background: transparent;
+    text-transform: capitalize;
+    outline-color: #035301; }
+    .contact-page .left form input::-webkit-input-placeholder, .contact-page .left form textarea::-webkit-input-placeholder {
+      color: #575757; }
+  .contact-page .left form textarea:focus, .contact-page .left form input:focus {
+    background: #058601;
+    color: #fff; }
+    .contact-page .left form textarea:focus::-webkit-input-placeholder, .contact-page .left form input:focus::-webkit-input-placeholder {
+      color: #fff; }
+
+.contact-page .right .right-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -13px; }
+  .contact-page .right .right-header h2 {
+    font-size: 18pt;
+    margin: 0 0px; }
+    .contact-page .right .right-header h2 span {
+      font-weight: 100; }
+  .contact-page .right .right-header .social {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 10px; }
+    .contact-page .right .right-header .social a {
+      font-size: 22pt;
+      box-sizing: border-box;
+      margin: 0 4px 0 0;
+      padding: 4px;
+      border-radius: 4px; }
+      .contact-page .right .right-header .social a:nth-child(1) {
+        background: #035301;
+        color: #fff; }
+      .contact-page .right .right-header .social a:nth-child(2), .contact-page .right .right-header .social a:nth-child(3) {
+        background: #035301;
+        color: #fff; }
+
+.contact-page .right iframe {
+  border: 1px solid #035301; }

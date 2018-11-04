@@ -5,13 +5,11 @@
 @import 'globals/mixins';
 @import 'globals/global';
 @import 'globals/header';
-
+ 
 //Pages
 @import 'pages/home';
-@import 'pages/services'; 
-@import 'pages/about';
-@import 'pages/clients';
-
+@import 'pages/interior'; 
+ 
 //Blog
 @import 'blog'; 
 
@@ -22,6 +20,7 @@ a {
 }
 a.scaleable:hover { transform: scale(1.1); color: #fff; }
 
-@import 'media-queries/phones'; 
+@import 'media-queries/phones';
+@import 'media-queries/tablets'; 
 
 

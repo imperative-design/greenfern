@@ -35,3 +35,23 @@
     border-radius: 4px;
     padding: 7px 10px;
  }
+
+ @mixin social_layout {
+    display: flex;
+    align-items: center;
+    a {
+        font-size: 22pt;
+        box-sizing: border-box;
+        margin: 0 4px 0 0;
+        padding: 4px;
+        border-radius: 4px;
+        &:nth-child(1) {
+            background: $dark-primary;
+            color: #fff;
+        }
+        &:nth-child(2), &:nth-child(3) {
+            background: $dark-primary;
+            color: #fff;
+        }
+    }
+ }

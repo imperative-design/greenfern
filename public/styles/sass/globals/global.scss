@@ -41,7 +41,7 @@ strong { font-weight: 500; }
 
 .page.wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto 50px;
 
     h1, h2, h3, h4 { 
@@ -60,6 +60,7 @@ strong { font-weight: 500; }
     background: #787878;
     min-height: 250px;
 }
+
 .graphic.image {
     max-width: 40%;
     max-height: 250px;

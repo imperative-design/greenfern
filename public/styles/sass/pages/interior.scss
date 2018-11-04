@@ -1,0 +1,92 @@
+@import '../globals/colors';
+@import '../globals//mixins';
+
+.clients-page{
+    .page.wrapper{
+        margin: 0;
+        width: 100%;
+        height: 100%
+    }
+    .ctas { height: 300px; }
+    .extendRight{
+        // height: 10%;
+    }
+    .extendLeft{
+
+    }
+}
+
+.about-page, .pricing-page, .services-page, .insurance-page, .contact-page {
+    .ctas { 
+        min-height: 200px; 
+        max-height: 300px; 
+    }
+    
+    .content {
+        width: 98%;
+        max-width: 1500px;
+        padding: 0;
+        margin: 0 1%;
+    }
+}
+
+.contact-page {
+    .content {
+        .wrapper { display: flex; justify-content: space-between; }
+    }
+    .left, .right {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        form {
+            display: block;
+            width: 100%;
+
+            input {}
+            textarea {
+                min-height: 125px;
+            }
+            input, textarea {
+                padding: 10px 5px;
+                margin: 0 0 15px;
+                border: none;
+                border-bottom: 1px dotted $dark-primary;
+                display: block;
+                width: 98%;
+                background: transparent;
+                text-transform: capitalize;
+                outline-color: $dark-primary;
+                &::-webkit-input-placeholder { color: #575757; }
+            }
+            textarea:focus, input:focus {
+                background: $primary;
+                color: #fff;
+                &::-webkit-input-placeholder { color: #fff; }
+            }
+        }
+    }
+    .right {
+        .right-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -13px;
+            h2 {
+                font-size: 18pt;
+                margin: 0 0px;
+                span {
+                    font-weight: 100;
+                }
+            }
+            .social {
+                @include social_layout
+                margin: 5px 0 10px;
+            }
+        }
+        iframe {
+            border: 1px solid $dark-primary;
+        }
+    }
+}
