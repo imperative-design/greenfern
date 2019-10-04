@@ -61,11 +61,12 @@ body > header, body.blog > #container > header {
     }
     
     .nav-wrapper {
-        margin-top: 20px;
+        margin-top: 10px;
         .nav-ctas {
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
+            margin: 0 0 8px;
             .phone {
                 font-weight: bold;
                 margin: 0 10px 0 0;

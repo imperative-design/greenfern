@@ -133,6 +133,10 @@ strong {
   .graphic.image.active {
     filter: grayscale(0); }
 
+.logo img {
+  width: 150px;
+  margin: 0 0 0 25px; }
+
 .ctas {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#787878+0,333333+100 */
   background: #787878;
@@ -438,11 +442,12 @@ body > header, body.blog > #container > header {
       body > header .logo .icon i, body.blog > #container > header .logo .icon i {
         font-size: 44pt; }
   body > header .nav-wrapper, body.blog > #container > header .nav-wrapper {
-    margin-top: 20px; }
+    margin-top: 10px; }
     body > header .nav-wrapper .nav-ctas, body.blog > #container > header .nav-wrapper .nav-ctas {
       display: flex;
       justify-content: flex-end;
-      align-items: flex-end; }
+      align-items: flex-end;
+      margin: 0 0 8px; }
       body > header .nav-wrapper .nav-ctas .phone, body.blog > #container > header .nav-wrapper .nav-ctas .phone {
         font-weight: bold;
         margin: 0 10px 0 0; }
@@ -670,7 +675,7 @@ body > header, body.blog > #container > header {
 .about-page .content, .pricing-page .content, .services-page .content,
 .insurance-page .content, .contact-page .content, .tree_removal .content,
 .stump_grinding .content, .firewood .content, .hardscape .content {
-  width: 98%;
+  width: 95%;
   max-width: 1500px;
   padding: 0;
   margin: 0 1%; }

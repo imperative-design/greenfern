@@ -15,7 +15,7 @@
 .about-page .content, .pricing-page .content, .services-page .content,
 .insurance-page .content, .contact-page .content, .tree_removal .content,
 .stump_grinding .content, .firewood .content, .hardscape .content {
-  width: 98%;
+  width: 95%;
   max-width: 1500px;
   padding: 0;
   margin: 0 1%; }
