@@ -7,15 +7,63 @@
 .home .ctas { 
     margin: 115px 0 15px 0;
     max-height: 500px;
-    .ad1 {
-        img { 
-            position: relative;
-            width: 100%;
-            z-index: 1;
+    .cta{
+        position: relative;
+        .banner-content {
+            $ad-padding: 10;
+            $ad-radius: 5px;
+
+            position: absolute;
+            top: 10%;
+            right: 15vw;
+            z-index: 10;
+            padding: #{$ad-padding}px;
+            box-sizing: border-box;
+            border: 5px solid $dark-primary;
+            border-radius: $ad-radius;
+            .inner {
+                display: flex;
+                flex-direction: column;
+                color: $dark-primary;
+                background: #fff;
+                width: auto;
+                align-items: center;
+                padding: 3vw;
+                border-radius: $ad-radius;
+                h2 {
+                    font-size: 24pt;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    margin: 0 0 10px 0;
+                }
+                a.btn {
+                    font-family: 'Fjalla One', sans-serif;
+                    font-size: 14pt;
+                    border-radius: 2px;
+                    &.accent {
+                        text-transform: capitalize;
+                        background: $accent;
+                        color: #fff;
+                        padding: #{$ad-padding}px #{$ad-padding*2}px;
+                    }
+                }
+                p {
+                    text-align: center;
+                    line-height: 1.4;
+                }
+            }
+        }
+        &.ad1 {
+            img { 
+                position: relative;
+                width: 100%;
+                z-index: 1;
+                opacity: .7;
+            }
         }
     }
 }
-
+ 
 .home-content {}
 
 .home .band.green {
@@ -74,7 +122,7 @@
             h4 {
                 text-align: center;
                 font-size: 12pt;
-                margin-bottom: 2px;
+                margin-bottom: 7px;
                 // font-weight: bold;
             }
             .rounded-btn {

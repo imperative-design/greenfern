@@ -91,7 +91,9 @@ and (max-width : 715px)
         display: flex;
         flex-direction: column;
        & > a {
-          max-width: 50%;
+          width: 50%;
+          justify-content: center;
+          min-height: 75px;
         }
       }
       .right {
@@ -122,7 +124,7 @@ and (max-width : 715px)
         }
       }
     }
-    .ctas { margin-top: 190px; }
+    .ctas { margin-top: 135px; }
     .container {
       margin: 0 0 100px;
     }

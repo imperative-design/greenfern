@@ -303,22 +303,11 @@ strong {
   .band .right {
     width: 80%; }
     .band .right > h2 {
-      background: #035301;
+      background: #60332A;
       font-size: 24;
       color: #fff;
       margin: 0px 0 10px;
-      padding: 10px 20px;
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$left+0,1e5799+100 */
-      background: #058601;
-      /* Old browsers */
-      background: -moz-linear-gradient(left, #058601 0%, #035301 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, #058601 0%, #035301 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, #058601 0%, #035301 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left', endColorstr='$right',GradientType=1 );
-      /* IE6-9 */ }
+      padding: 10px 20px; }
     .band .right .testimonials {
       display: flex; }
       .band .right .testimonials .testimonial {
@@ -461,7 +450,7 @@ body > header, body.blog > #container > header {
           margin: 0 5px 0 0; }
       body > header .nav-wrapper .nav-ctas .quote, body.blog > #container > header .nav-wrapper .nav-ctas .quote {
         text-transform: capitalize;
-        background: #058601;
+        background: #60332A;
         padding: 4px 7px;
         border-radius: 4px;
         color: #fff;
@@ -538,10 +527,48 @@ body > header, body.blog > #container > header {
 .home .ctas {
   margin: 115px 0 15px 0;
   max-height: 500px; }
-  .home .ctas .ad1 img {
-    position: relative;
-    width: 100%;
-    z-index: 1; }
+  .home .ctas .cta {
+    position: relative; }
+    .home .ctas .cta .banner-content {
+      position: absolute;
+      top: 10%;
+      right: 15vw;
+      z-index: 10;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 5px solid #035301;
+      border-radius: 5px; }
+      .home .ctas .cta .banner-content .inner {
+        display: flex;
+        flex-direction: column;
+        color: #035301;
+        background: #fff;
+        width: auto;
+        align-items: center;
+        padding: 3vw;
+        border-radius: 5px; }
+        .home .ctas .cta .banner-content .inner h2 {
+          font-size: 24pt;
+          text-transform: capitalize;
+          font-weight: bold;
+          margin: 0 0 10px 0; }
+        .home .ctas .cta .banner-content .inner a.btn {
+          font-family: 'Fjalla One', sans-serif;
+          font-size: 14pt;
+          border-radius: 2px; }
+          .home .ctas .cta .banner-content .inner a.btn.accent {
+            text-transform: capitalize;
+            background: #F4761D;
+            color: #fff;
+            padding: 10px 20px; }
+        .home .ctas .cta .banner-content .inner p {
+          text-align: center;
+          line-height: 1.4; }
+    .home .ctas .cta.ad1 img {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      opacity: .7; }
 
 .home .band.green {
   min-height: 200px;
@@ -594,7 +621,7 @@ body > header, body.blog > #container > header {
       .home .band.green .wrapper section:last-child h4 {
         text-align: center;
         font-size: 12pt;
-        margin-bottom: 2px; }
+        margin-bottom: 7px; }
       .home .band.green .wrapper section:last-child .rounded-btn {
         margin-top: 0;
         font-size: 17pt;
@@ -634,11 +661,15 @@ body > header, body.blog > #container > header {
 .clients-page .ctas {
   height: 300px; }
 
-.about-page .ctas, .pricing-page .ctas, .services-page .ctas, .insurance-page .ctas, .contact-page .ctas {
+.about-page .ctas, .pricing-page .ctas, .services-page .ctas,
+.insurance-page .ctas, .contact-page .ctas, .tree_removal .ctas,
+.stump_grinding .ctas, .firewood .ctas, .hardscape .ctas {
   min-height: 200px;
   max-height: 300px; }
 
-.about-page .content, .pricing-page .content, .services-page .content, .insurance-page .content, .contact-page .content {
+.about-page .content, .pricing-page .content, .services-page .content,
+.insurance-page .content, .contact-page .content, .tree_removal .content,
+.stump_grinding .content, .firewood .content, .hardscape .content {
   width: 98%;
   max-width: 1500px;
   padding: 0;
@@ -706,6 +737,18 @@ body > header, body.blog > #container > header {
 .contact-page .right iframe {
   border: 1px solid #035301; }
 
+.block {
+  margin: 0 0 25px; }
+  .block h4 {
+    margin: 0 0 10px; }
+  .block ul {
+    padding-left: 10px; }
+    .block ul li {
+      margin: 0 0 2px; }
+
+p {
+  line-height: 1.4; }
+
 body.blog > #container > header {
   max-width: none; }
   body.blog > #container > header .wrapper {
@@ -728,25 +771,31 @@ a.scaleable:hover {
   transform: scale(1.1);
   color: #fff; }
 
-@media only screen and (max-width: 415px) {
-  .page header .nav-toggle {
-    visibility: visible;
-    color: #058601;
-    font-size: 24pt;
-    position: absolute;
-    right: 10px;
-    top: 40px; }
-  .page header .wrapper .nav-wrapper {
-    margin-top: 20px; }
-    .page header .wrapper .nav-wrapper .nav-ctas {
-      display: none; }
-    .page header .wrapper .nav-wrapper .nav {
-      flex-direction: column;
-      align-items: center;
-      display: none;
-      text-align: center; }
-      .page header .wrapper .nav-wrapper .nav > li {
-        margin: 0 0 10px; }
+@media only screen and (max-width: 450px) {
+  .home .ctas .cta .banner-content {
+    left: 5%;
+    margin: 0 auto;
+    width: 90%; }
+  .page header {
+    box-shadow: 0px 0px 1px #000; }
+    .page header .nav-toggle {
+      visibility: visible;
+      color: #058601;
+      font-size: 24pt;
+      position: absolute;
+      right: 10px;
+      top: 40px; }
+    .page header .wrapper .nav-wrapper {
+      margin-top: 20px; }
+      .page header .wrapper .nav-wrapper .nav-ctas {
+        display: none; }
+      .page header .wrapper .nav-wrapper .nav {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        text-align: center; }
+        .page header .wrapper .nav-wrapper .nav > li {
+          margin: 0 0 10px; }
   .page.home .band .right .testimonials .testimonial {
     width: 95%; }
   .page.home .band.green {
@@ -792,7 +841,9 @@ a.scaleable:hover {
       display: flex;
       flex-direction: column; }
       .home .band .left > a {
-        max-width: 50%; }
+        width: 50%;
+        justify-content: center;
+        min-height: 75px; }
     .home .band .right .testimonials {
       flex-direction: column;
       align-items: center; }
@@ -812,7 +863,7 @@ a.scaleable:hover {
     .home .band.green .wrapper section:last-child .social {
       justify-content: center; }
   .home .ctas {
-    margin-top: 190px; }
+    margin-top: 135px; }
   .home .container {
     margin: 0 0 100px; }
   header .wrapper {

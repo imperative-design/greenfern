@@ -16,7 +16,9 @@
     }
 }
 
-.about-page, .pricing-page, .services-page, .insurance-page, .contact-page {
+.about-page, .pricing-page, .services-page, 
+.insurance-page, .contact-page, .tree_removal, 
+.stump_grinding, .firewood, .hardscape  {
     .ctas { 
         min-height: 200px; 
         max-height: 300px; 
@@ -89,4 +91,21 @@
             border: 1px solid $dark-primary;
         }
     }
+}
+
+.block {
+    margin: 0 0 25px;
+    h4 {
+        margin: 0 0 10px;
+    }
+    ul {
+        padding-left: 10px;
+        li {
+            margin: 0 0 2px;
+        }
+    }
+}
+
+p {
+    line-height: 1.4;
 }

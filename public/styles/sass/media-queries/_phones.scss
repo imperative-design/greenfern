@@ -1,10 +1,15 @@
 
 //Larger Phones
 @media only screen 
-and (max-width : 415px)
-{  
+and (max-width : 450px) {
+  .home .ctas .cta .banner-content {
+    left: 5%;
+    margin: 0 auto;
+    width: 90%;
+  }  
   .page {
     header {
+      box-shadow: 0px 0px 1px #000;
       .nav-toggle {
         visibility: visible;
         color: $primary;

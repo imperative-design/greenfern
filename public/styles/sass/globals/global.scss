@@ -240,12 +240,12 @@ strong { font-weight: 500; }
     .right {
         width: 80%;
         & > h2 {
-            background: $dark-primary;
+            background: $secondary;
             font-size: 24;
              color: #fff;
              margin: 0px 0 10px;
              padding: 10px 20px;
-             @include h_gradient($primary, $dark-primary);
+            //  @include h_gradient($primary, $dark-primary);
         }
         .testimonials {
             display: flex;

@@ -6,11 +6,15 @@
 .clients-page .ctas {
   height: 300px; }
 
-.about-page .ctas, .pricing-page .ctas, .services-page .ctas, .insurance-page .ctas, .contact-page .ctas {
+.about-page .ctas, .pricing-page .ctas, .services-page .ctas,
+.insurance-page .ctas, .contact-page .ctas, .tree_removal .ctas,
+.stump_grinding .ctas, .firewood .ctas, .hardscape .ctas {
   min-height: 200px;
   max-height: 300px; }
 
-.about-page .content, .pricing-page .content, .services-page .content, .insurance-page .content, .contact-page .content {
+.about-page .content, .pricing-page .content, .services-page .content,
+.insurance-page .content, .contact-page .content, .tree_removal .content,
+.stump_grinding .content, .firewood .content, .hardscape .content {
   width: 98%;
   max-width: 1500px;
   padding: 0;
@@ -77,3 +81,15 @@
 
 .contact-page .right iframe {
   border: 1px solid #035301; }
+
+.block {
+  margin: 0 0 25px; }
+  .block h4 {
+    margin: 0 0 10px; }
+  .block ul {
+    padding-left: 10px; }
+    .block ul li {
+      margin: 0 0 2px; }
+
+p {
+  line-height: 1.4; }

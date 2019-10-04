@@ -1,10 +1,48 @@
 .home .ctas {
   margin: 115px 0 15px 0;
   max-height: 500px; }
-  .home .ctas .ad1 img {
-    position: relative;
-    width: 100%;
-    z-index: 1; }
+  .home .ctas .cta {
+    position: relative; }
+    .home .ctas .cta .banner-content {
+      position: absolute;
+      top: 10%;
+      right: 15vw;
+      z-index: 10;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 5px solid #035301;
+      border-radius: 5px; }
+      .home .ctas .cta .banner-content .inner {
+        display: flex;
+        flex-direction: column;
+        color: #035301;
+        background: #fff;
+        width: auto;
+        align-items: center;
+        padding: 3vw;
+        border-radius: 5px; }
+        .home .ctas .cta .banner-content .inner h2 {
+          font-size: 24pt;
+          text-transform: capitalize;
+          font-weight: bold;
+          margin: 0 0 10px 0; }
+        .home .ctas .cta .banner-content .inner a.btn {
+          font-family: 'Fjalla One', sans-serif;
+          font-size: 14pt;
+          border-radius: 2px; }
+          .home .ctas .cta .banner-content .inner a.btn.accent {
+            text-transform: capitalize;
+            background: #F4761D;
+            color: #fff;
+            padding: 10px 20px; }
+        .home .ctas .cta .banner-content .inner p {
+          text-align: center;
+          line-height: 1.4; }
+    .home .ctas .cta.ad1 img {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      opacity: .7; }
 
 .home .band.green {
   min-height: 200px;
@@ -57,7 +95,7 @@
       .home .band.green .wrapper section:last-child h4 {
         text-align: center;
         font-size: 12pt;
-        margin-bottom: 2px; }
+        margin-bottom: 7px; }
       .home .band.green .wrapper section:last-child .rounded-btn {
         margin-top: 0;
         font-size: 17pt;
