@@ -99,7 +99,7 @@ strong {
   margin: 0 auto 50px;
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow-x: hidden; }
   .container.wide {
     max-width: 1700px; }
 

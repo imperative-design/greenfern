@@ -32,7 +32,7 @@ strong { font-weight: 500; }
     margin: 0 auto 50px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
     &.wide {
         max-width: 1700px;
     }
