@@ -37,7 +37,8 @@ strong {
   width: 100%;
   margin: 0 auto 50px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow: hidden; }
   .container.wide {
     max-width: 1700px; }
 
