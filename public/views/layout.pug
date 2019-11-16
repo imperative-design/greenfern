@@ -12,6 +12,16 @@ html
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css", integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU", crossorigin="anonymous")
 
     body.page(class=active_page)
+        .header-top
+            .inner
+                include social.pug
+                .nav-ctas
+                    a.phone(href="tel:770-881-1712") 
+                        i.fas.fa-phone
+                        | (770) 881-1712
+                    a.quote(href="mailto:greenferntreeservice@gmail.com") 
+                        i.fas.fa-envelope
+                        | request a quote
         header.group
             .wrapper
                 a(href="./").logo.scaleable
@@ -19,28 +29,25 @@ html
                 a.nav-toggle(href="#")
                     i.fa.fa-bars
                 .nav-wrapper
-                    .nav-ctas
-                        a.phone 
-                            i.fas.fa-phone
-                            | (770) 881-1712
-                        a.quote request a quote
-                    include nav.pug 
-        div.container     
+                    //include nav.pug 
+        div.container.wide     
             block content
 
             block bodyscripts
                 script(src='./scripts/rxjs/bundles/Rx.js')
                 script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+                script(src='/js/isotope.js')
                 script(src='/js/global.js')
 
     block footer
         footer#footer
             a.copyright &copy; Green fern Tree Service
-            .sitemap
-                a(href="./") Home
-                a Pricing
-                a Services
-                a About
-                a Insurance Info
-                a(href="/news") Tree Care
+            //- .sitemap
+            //-     a(href="./") Home
+            //-     a Pricing
+            //-     a Services
+            //-     a About
+            //-     a Insurance Info
+            //-     a(href="/news") Tree Care
+            a.quote(href="mailto:greenferntreeservice@gmail.com") greenferntreeservice (at) gmail.com
             a.phone(href="tel:(770) 881-1712") (770) 881-1712

@@ -26,6 +26,16 @@ function bindEvents(){
     //         if(resp.status === 200 && resp.response[0].status == 'sent') toggleSuccessMsg('.quick-contact form', '.quick-contact .success-msg');
     //     });
     // });
+
+    $('.gallery').isotope({
+        // percentPosition: true,
+        itemSelector: 'img',
+        layoutMode: 'masonry',
+        masonry: {
+            columnWidth: 10,
+            gutter: 10,
+        }
+    });
 }
 
 function toggleSuccessMsg(formSelector, successMsgSelector){

@@ -5,36 +5,49 @@
 
 
 .home .ctas { 
-    margin: 115px 0 15px 0;
-    max-height: 500px;
+    margin: 90px 0 50px 0;
+    max-height: 700px;
     .cta{
         position: relative;
         .banner-content {
             $ad-padding: 10;
             $ad-radius: 5px;
-
             position: absolute;
-            top: 10%;
-            right: 15vw;
+            top: 25%;
+            right: 8vw;
             z-index: 10;
-            padding: #{$ad-padding}px;
             box-sizing: border-box;
-            border: 5px solid $dark-primary;
-            border-radius: $ad-radius;
+            // padding: #{$ad-padding}px;
+            // border: 5px solid $dark-primary;
+            // border-radius: $ad-radius;
             .inner {
                 display: flex;
                 flex-direction: column;
-                color: $dark-primary;
-                background: #fff;
+                background: rgba(255, 255, 255, .85);
                 width: auto;
                 align-items: center;
-                padding: 3vw;
-                border-radius: $ad-radius;
+                padding: 2vw 3vw;
+                border-radius: 5px;
+                border: 1px solid #fff;
+                box-shadow: 0px 0px 5px hsla(0, 0%, 10%, 0.3);
+                color: $dark-primary;
                 h2 {
                     font-size: 24pt;
-                    text-transform: capitalize;
-                    font-weight: bold;
-                    margin: 0 0 10px 0;
+                    text-transform: uppercase;
+                    // font-weight: bold;
+                    margin: 0 0 15px 0;
+                    span {
+                        color: $secondary;
+                        // font-weight: 700;
+                    }
+                }
+                h4 {
+                    font-size: 17pt;
+                    margin: 0 0 15px;
+                }
+                p {
+                    margin: 0 0 10px;
+                    color: #333;
                 }
                 a.btn {
                     font-family: 'Fjalla One', sans-serif;
@@ -44,7 +57,9 @@
                         text-transform: capitalize;
                         background: $accent;
                         color: #fff;
-                        padding: #{$ad-padding}px #{$ad-padding*2}px;
+                        // padding: #{$ad-padding}px #{$ad-padding*2}px;
+                        margin-top: 10px;
+                        padding: 10px 40px;
                     }
                 }
                 p {
@@ -58,13 +73,19 @@
                 position: relative;
                 width: 100%;
                 z-index: 1;
-                opacity: .7;
+                // opacity: .7;
             }
         }
     }
 }
  
-.home-content {}
+.home-content.container {
+    margin: 0 auto 50px;
+    .band {
+        margin: 0;
+        align-items: center;
+    }
+}
 
 .home .band.green {
     min-height: 200px;
@@ -135,5 +156,12 @@
                 @include social_layout
             }
         }
+    }
+}
+
+.gallery {
+    img {
+        max-width: 500px;
+        margin: 0 10px 10px;
     }
 }
