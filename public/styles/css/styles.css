@@ -883,7 +883,14 @@ a.scaleable:hover {
   .page.home .band .left > a {
     width: 98%; }
   footer {
-    max-width: 425px; } }
+    max-width: 425px; }
+  .gallery {
+    width: 100%; }
+    .gallery img, .gallery .grid-sizer {
+      float: none;
+      max-width: 500px;
+      width: 98%;
+      margin: 0 auto 10px; } }
 
 /*
       iPad 3 & 4 Media Queries
