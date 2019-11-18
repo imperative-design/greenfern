@@ -160,7 +160,9 @@
 }
 
 .gallery {
-    img {
+    width: 100%;
+    img, .grid-sizer {
+        float: left;
         max-width: 500px;
         width: 30%;
         margin: 0 10px 10px;
