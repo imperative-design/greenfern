@@ -890,7 +890,7 @@ a.scaleable:hover {
       float: none;
       max-width: 500px;
       width: 98%;
-      margin: 0 auto 10px; } }
+      margin: 0 0 10px 1%; } }
 
 /*
       iPad 3 & 4 Media Queries
