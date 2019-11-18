@@ -875,11 +875,22 @@ a.scaleable:hover {
   body.page.home .band.green .wrapper section, .home .band.green .wrapper section:nth-child(1), .home .band.green .wrapper section:nth-child(2), .home .band.green .wrapper section:nth-child(3) {
     width: 100%; }
   .page.home > header {
-    max-width: 425px; }
+    max-width: 425px;
+    overflow: hidden; }
+    .page.home > header .wrapper .logo {
+      display: block; }
+      .page.home > header .wrapper .logo img {
+        width: 150px;
+        height: auto; }
   .page.home .header-top .inner {
     justify-content: center; }
     .page.home .header-top .inner .social {
       display: none; }
+    .page.home .header-top .inner .nav-ctas {
+      justify-content: space-between;
+      width: 100%; }
+      .page.home .header-top .inner .nav-ctas a {
+        margin: 0 10px; }
   .page.home .band .left > a {
     width: 98%; }
   footer {

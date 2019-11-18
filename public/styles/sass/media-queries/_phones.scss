@@ -73,12 +73,26 @@
   .page.home {
     & > header {
       max-width: 425px;
+      overflow: hidden;
+      .wrapper {
+        .logo {
+          display: block;
+          img { width: 150px; height: auto;}
+        }
+      }
     }
     .header-top {
       .inner {
         justify-content: center;
         .social {
           display: none;
+        }
+        .nav-ctas {
+          justify-content: space-between;
+          width: 100%;
+          a {
+            margin: 0 10px;
+          }
         }
       }
     }
