@@ -27,15 +27,18 @@ function bindEvents(){
     //     });
     // });
 
-    $('.gallery').isotope({
-        // percentPosition: true,
-        itemSelector: 'img',
-        layoutMode: 'masonry',
-        masonry: {
-            columnWidth: 10,
-            gutter: 10,
-        }
-    });
+    window.setTimeout(() => {
+        $('.gallery').isotope({
+            // percentPosition: true,
+            itemSelector: 'img',
+            layoutMode: 'masonry',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer',
+                // gutter: 10,
+            }
+        });
+    }, 1000);
 }
 
 function toggleSuccessMsg(formSelector, successMsgSelector){

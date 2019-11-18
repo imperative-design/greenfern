@@ -871,7 +871,7 @@ a.scaleable:hover {
   body.page.home .band.green .wrapper section, .home .band.green .wrapper section:nth-child(1), .home .band.green .wrapper section:nth-child(2), .home .band.green .wrapper section:nth-child(3) {
     width: 100%; }
   .page.home > header {
-    max-width: 400px; }
+    max-width: 425px; }
   .page.home .header-top .inner {
     justify-content: center; }
     .page.home .header-top .inner .social {
@@ -879,7 +879,7 @@ a.scaleable:hover {
   .page.home .band .left > a {
     width: 98%; }
   footer {
-    max-width: 400px; } }
+    max-width: 425px; } }
 
 /*
       iPad 3 & 4 Media Queries
