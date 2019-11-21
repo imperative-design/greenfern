@@ -166,7 +166,7 @@ strong {
         font-weight: bold;
         margin: 0 25px 0 0; }
         .header-top .inner .nav-ctas a:last-child {
-          margin: 0 10px 0 0; }
+          margin: 0; }
         .header-top .inner .nav-ctas a i {
           margin: 0 5px 0 0; }
 
@@ -185,7 +185,7 @@ strong {
 
 .logo img {
   width: 150px;
-  margin: 0 0 0 25px; }
+  margin: 0; }
 
 .ctas {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#787878+0,333333+100 */
@@ -499,7 +499,6 @@ body > header, body.blog > #container > header {
       font-weight: 100;
       z-index: 50;
       justify-content: space-between;
-      min-width: 285px;
       margin: 4px 0 0 0; }
       body > header .nav-wrapper .nav li, body.blog > #container > header .nav-wrapper .nav li {
         position: relative;
@@ -723,7 +722,7 @@ body > header, body.blog > #container > header {
 .insurance-page .ctas, .contact-page .ctas, .tree_removal .ctas,
 .stump_grinding .ctas, .firewood .ctas, .hardscape .ctas {
   min-height: 200px;
-  max-height: 300px; }
+  max-height: 500px; }
 
 .about-page .content, .pricing-page .content, .services-page .content,
 .insurance-page .content, .contact-page .content, .tree_removal .content,
@@ -837,13 +836,12 @@ a.scaleable:hover {
   .page header, .page.home header {
     box-shadow: 0px 0px 1px #000; }
     .page header .nav-toggle, .page.home header .nav-toggle {
-      display: none;
       visibility: visible;
       color: #058601;
       font-size: 24pt;
       position: absolute;
       right: 10px;
-      top: 40px; }
+      top: 75px; }
     .page header .wrapper .nav-wrapper, .page.home header .wrapper .nav-wrapper {
       margin-top: 20px; }
       .page header .wrapper .nav-wrapper .nav-ctas, .page.home header .wrapper .nav-wrapper .nav-ctas {
@@ -882,17 +880,17 @@ a.scaleable:hover {
       .page.home > header .wrapper .logo img {
         width: 150px;
         height: auto; }
-  .page.home .header-top .inner {
-    justify-content: center; }
-    .page.home .header-top .inner .social {
-      display: none; }
-    .page.home .header-top .inner .nav-ctas {
-      justify-content: space-between;
-      width: 100%; }
-      .page.home .header-top .inner .nav-ctas a {
-        margin: 0 10px; }
   .page.home .band .left > a {
     width: 98%; }
+  .header-top .inner {
+    justify-content: center; }
+    .header-top .inner .social {
+      display: none; }
+    .header-top .inner .nav-ctas {
+      justify-content: space-between;
+      width: 100%; }
+      .header-top .inner .nav-ctas a {
+        margin: 0 10px; }
   footer {
     max-width: 425px; }
   .gallery {
@@ -901,7 +899,11 @@ a.scaleable:hover {
       float: none;
       max-width: 500px;
       width: 98%;
-      margin: 0 0 10px 1%; } }
+      margin: 0 0 10px 1%; }
+  .page.wrapper h1 {
+    text-align: center; }
+    .page.wrapper h1 span {
+      display: none; } }
 
 /*
       iPad 3 & 4 Media Queries

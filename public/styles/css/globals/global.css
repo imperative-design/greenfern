@@ -105,7 +105,7 @@ strong {
         font-weight: bold;
         margin: 0 25px 0 0; }
         .header-top .inner .nav-ctas a:last-child {
-          margin: 0 10px 0 0; }
+          margin: 0; }
         .header-top .inner .nav-ctas a i {
           margin: 0 5px 0 0; }
 
@@ -124,7 +124,7 @@ strong {
 
 .logo img {
   width: 150px;
-  margin: 0 0 0 25px; }
+  margin: 0; }
 
 .ctas {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#787878+0,333333+100 */
