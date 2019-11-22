@@ -26,6 +26,19 @@ function bindEvents(){
     //         if(resp.status === 200 && resp.response[0].status == 'sent') toggleSuccessMsg('.quick-contact form', '.quick-contact .success-msg');
     //     });
     // });
+
+    window.setTimeout(() => {
+        $('.gallery').isotope({
+            // percentPosition: true,
+            itemSelector: 'img',
+            layoutMode: 'masonry',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer',
+                // gutter: 10,
+            }
+        });
+    }, 1000);
 }
 
 function toggleSuccessMsg(formSelector, successMsgSelector){

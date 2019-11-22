@@ -37,7 +37,10 @@ strong {
   width: 100%;
   margin: 0 auto 50px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-x: hidden; }
+  .container.wide {
+    max-width: 1700px; }
 
 .wrapper {
   width: 100%;
@@ -59,6 +62,53 @@ strong {
   .page.wrapper h1 span {
     font-weight: 100; }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  background: #035301;
+  position: relative;
+  z-index: 1000; }
+  .header-top .inner {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0; }
+    .header-top .inner .social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 27%;
+      max-width: 375px;
+      color: #fff;
+      text-transform: capitalize; }
+      .header-top .inner .social span {
+        font-weight: bold;
+        font-size: 14pt;
+        margin-right: 10px; }
+      .header-top .inner .social a {
+        color: #fff;
+        font-size: 14pt; }
+    .header-top .inner .nav-ctas {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 1000;
+      background: #035301; }
+      .header-top .inner .nav-ctas a {
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: bold;
+        margin: 0 25px 0 0; }
+        .header-top .inner .nav-ctas a:last-child {
+          margin: 0; }
+        .header-top .inner .nav-ctas a i {
+          margin: 0 5px 0 0; }
+
 .graphic.placeholder {
   width: 40%;
   background: #787878;
@@ -74,7 +124,7 @@ strong {
 
 .logo img {
   width: 150px;
-  margin: 0 0 0 25px; }
+  margin: 0; }
 
 .ctas {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#787878+0,333333+100 */

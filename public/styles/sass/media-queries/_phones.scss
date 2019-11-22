@@ -1,13 +1,12 @@
 
 //Larger Phones
-@media only screen 
-and (max-width : 450px) {
+@media only screen and (max-width : 450px) {
   .home .ctas .cta .banner-content {
     left: 5%;
     margin: 0 auto;
     width: 90%;
   }  
-  .page {
+  .page, .page.home {
     header {
       box-shadow: 0px 0px 1px #000;
       .nav-toggle {
@@ -16,7 +15,7 @@ and (max-width : 450px) {
         font-size: 24pt;
         position: absolute;
         right: 10px;
-        top: 40px;
+        top: 75px;
       }
       .wrapper {
         .nav-wrapper {
@@ -34,6 +33,32 @@ and (max-width : 450px) {
         }
       }
     }
+
+    .ctas {
+      margin-top: 115px;
+      min-height: 300px;
+      margin-bottom: 30px;
+      .cta {
+        img {
+          width: 200%;
+        }
+        .banner-content {
+          .inner {
+            h2, p {
+              display: none;
+            }
+            h4 {
+              text-align: center;
+              font-size: 14pt;
+            }
+          }
+        }
+      }
+    }
+
+    .home-content.container {
+      margin-bottom: 30px;
+    }
   }
   .page.home .band .right .testimonials .testimonial {
     width: 95%;
@@ -42,5 +67,63 @@ and (max-width : 450px) {
   .page.home .band.green { padding: 20px 2%; }
   body.page.home .band.green .wrapper section, .home .band.green .wrapper section:nth-child(1), .home .band.green .wrapper section:nth-child(2), .home .band.green .wrapper section:nth-child(3) {
     width: 100%;
+  }
+
+  .page.home {
+    & > header {
+      max-width: 425px;
+      overflow: hidden;
+      .wrapper {
+        .logo {
+          display: block;
+          img { width: 150px; height: auto;}
+        }
+      }
+    }
+   
+    .band {
+      .left {
+        & > a {
+          width: 98%;
+        }
+      }
+    }
+  }
+
+  .header-top {
+    .inner {
+      justify-content: center;
+      .social {
+        display: none;
+      }
+      .nav-ctas {
+        justify-content: space-between;
+        width: 100%;
+        a {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  footer {
+    max-width: 425px;
+  }
+
+  .gallery {
+    width: 100%;
+    img, .grid-sizer {
+        float: none;
+        max-width: 500px;
+        width: 98%;
+        margin: 0 0 10px 1%;
+    }
+  }
+
+  .page.wrapper h1 {
+    text-align: center;
+    span {
+      display: none;
+    }
   }
 }
